@@ -119,7 +119,7 @@
 			<div class="wow bounceInUp" data-wow-delay="0.4s">
                     <div id="owl-intro" class="owl-carousel">
                         <div class="item"><img src="img/gallery/1.jpg" class="img-responsive" alt="img"></div>
-                        <div class="item"><img src="img/gallery/2.jpg" class="img-responsive" alt="img"></div>
+                        <!--<div class="item"><img src="img/gallery/2.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/3.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/4.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/5.jpg" class="img-responsive" alt="img"></div>
@@ -128,6 +128,8 @@
                         <div class="item"><img src="img/gallery/8.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/9.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/10.jpg" class="img-responsive" alt="img"></div>
+						<div class="item"><img src="img/gallery/12.jpg" class="img-responsive" alt="img"></div>-->
+
             		</div>
 			</div>
 
@@ -161,7 +163,6 @@
                                                       <div class="collapse navbar-collapse" id="menu">
                                                             <ul class="nav navbar-nav">
                                                                   <li><a href="#contact">تماس با ما</a></li>
-																  <li><a href="#gallery">گالری</a></li>
 																  <li><a href="#about">درباره مینل</a></li>
 																  <li class="active"><a href="#intro">مینل</a></li>
                                                             </ul>
@@ -203,16 +204,73 @@
 					<img src="img/img1.jpg" class="img-responsive img-rounded" alt="" />
 				</div>		
 				<div class="col-md-6">
-					<p><strong>سالن زیبایی مینل</strong></p>
-					<p>
-					به مناسبت افتتاح سالن زیبایی مینل خدمات سالن با 03 درصد تخفیف ارایه می گردد:
-					</p>
+		
+            <div class="form-wrapper marginbot-50">
+                <div id="message_pm"><?=$message_sent?></div>
+                <div id="errormessage"></div>
+                <form id="contact-form" action="index.php" method="post" role="form" class="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="نام" data-rule="minlen:4" data-msg="حداقل 4 حرف" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="ایمیل" data-rule="email" data-msg="ایمیل ورودی اشتباه است" />
+                        <div class="validation"></div>
+                    </div>
+                   <div class="form-group">
+                        <input type="number" class="form-control" name="number" id="number" placeholder="شماره تلفن" data-rule="number" data-msg="لطفا شماره تلفن صحیح وارد کنید" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" style="height:50px" name="message" rows="2" data-rule="required" data-msg="پیام خود را بنویسید" placeholder="متن پیام"></textarea>
+                        <div class="validation"	></div>
+                    </div>
+                    
+                    <div class="text-center"><button type="submit" class="btn btn-skin btn-block" id="btnContactUs">ارسال</button></div>
+                </form>
+            </div>
+			
 					
-					<a href="#gallery" class="btn btn-skin btn-lg btn-scroll">مشاهده تصاویر بیشتر</a>
+					<!--<a href="#gallery" class="btn btn-skin btn-lg btn-scroll">مشاهده تصاویر بیشتر</a>-->
 				</div>
 			</div>		
 		</div>
 	</section>
+
+
+	<section class="section-heading">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+
+
+				</div>
+			</div>
+		</div>
+	
+
+
+	<div class="text-center">
+					<p class="lead"><i class="fa fa-phone"></i> ٢٦٧٥١٠٣٠ - ٢٦٧٥١٠٤٠ - ٢٦٧٥١٠٦٠</p>
+
+
+					<p class="lead"><i class="fa fa-address"></i> آدرس: ميدان هروی، شمس اباد، پايين تر از ميدان شریفی، پلاك٩٦٢، طبقه ٥ غربی</p>
+
+
+
+					<p class="lead">
+					<h5>مارا در تلگرام و اینستاگرام دنبال کنید</h5>
+						<a href="http://instagram.com/minelBeauty" target="_blank" ><img src="img/insta.png" class="share_icon"></a>
+						<a href="http://telegram.me/minelBeauty" target="_blank"><img src="img/telegram.png" class="share_icon"></a>
+					
+					</p>
+
+	
+
+		</div>
+	</section>
+
 	<!-- /Section: about -->
 	
 	<!-- Section: separator -->
@@ -259,7 +317,7 @@
 	
 	
 	<!-- Section: gallery -->
-    <section id="gallery" class="home-section text-center bg-gray">
+    <!--<section id="gallery" class="home-section text-center bg-gray">
 
 			<div class="container">
 			<div class="row">
@@ -291,85 +349,11 @@
                 </div>
             </div>
 		</div>
-	</section>
+	</section>-->
 	<!-- /Section: services -->
 	
 
-	
 
-	<!-- Section: contact -->
-    <section id="contact" class="home-section text-center">
-		<div class="heading-contact">
-			<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-offset-2">
-					
-					<div class="section-heading">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<h2>فرم تماس با ما</h2>
-					</div>
-					<p class="wow lightSpeedIn" data-wow-delay="0.3s">
-					جهت استفاده از خدمات سالن زیبایی مینل با تخفیف افتتاحیه نیز و شرکت در قرعه کشی هفتگی ما ) استفاد
-از خدمات رایگان به قید قرعه فرم زیر را تكمیل نمائید:	
-					</p>
-					</div>
-					
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="container">
-			
-    <div class="row">
-        <div class="col-lg-8 col-md-offset-2">
-            <div class="form-wrapper marginbot-50">
-                <div id="message_pm"><?=$message_sent?></div>
-                <div id="errormessage"></div>
-                <form id="contact-form" action="index.php" method="post" role="form" class="contactForm">
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="نام" data-rule="minlen:4" data-msg="حداقل 4 حرف" />
-                        <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="ایمیل" data-rule="email" data-msg="ایمیل ورودی اشتباه است" />
-                        <div class="validation"></div>
-                    </div>
-                   <div class="form-group">
-                        <input type="number" class="form-control" name="number" id="number" placeholder="شماره تلفن" data-rule="number" data-msg="لطفا شماره تلفن صحیح وارد کنید" />
-                        <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="پیام خود را بنویسید" placeholder="متن پیام"></textarea>
-                        <div class="validation"	></div>
-                    </div>
-                    
-                    <div class="text-center"><button type="submit" class="btn btn-skin btn-block" id="btnContactUs">ارسال</button></div>
-                </form>
-            </div>
-			<div class="text-center">
-					<p class="lead"><i class="fa fa-phone"></i> ٢٦٧٥١٠٣٠</p>
-					<p class="lead"><i class="fa fa-phone"></i> ٢٦٧٥١٠٤٠</p>
-					<p class="lead"><i class="fa fa-phone"></i> ٢٦٧٥١٠٦٠</p>
-
-					<p class="lead"><i class="fa fa-address"></i> آدرس: ميدان هروی، شمس اباد، پايين تر از ميدان شریفی، پلاك٩٦٢، طبقه ٥ غربی</p>
-
-
-
-					<p class="lead">
-					<h5>مارا در تلگرام و اینستاگرام دنبال کنید</h5>
-						<a href="http://instagram.com/minelbeauti" target="_blank" ><img src="img/insta.png" class="share_icon"></a>
-						<a href="http://telegram.me/minelbeauti" target="_blank"><img src="img/telegram.png" class="share_icon"></a>
-					
-					</p>
-
-			</div>
-        </div>
-
-    </div>	
-	
-
-		</div>
-	</section>
 	<!-- /Section: contact -->
 
 	<footer>
