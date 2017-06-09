@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 30px;
-	font-family: vazir,'Open Sans', sans-serif;
+	font-family: bvazir,'Open Sans', sans-serif;
     font-weight: 400;
     color: #444;
 }
@@ -253,12 +253,16 @@ hr {
 .marginbot-40{margin-bottom:40px !important;}
 .marginbot-50{margin-bottom:50px !important;}
 
+.page_title span{
+    color: #d43076;
+}
+
 /* ===========================
 --- General sections
 ============================ */
 
 .home-section {
-    padding-top: 120px;
+    padding-top: 30px;
     padding-bottom: 1px;
 	display:block;
     position:relative;
@@ -326,7 +330,7 @@ hr {
 
 .intro_wrapp_logo{
     position: absolute;
-    top: 200px;
+    bottom: 0px;
     width: 100%;
 }
 
@@ -503,12 +507,20 @@ footer a:hover {
     color: #fff;
 }
 
+
+.form_title{
+
+}
+
 /* ==========================
 Parallax
 ============================= */
 
+
 #separator {	
 	background-image: url(../img/parallax-bg.jpg);
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 #separator .icon {
@@ -684,7 +696,9 @@ a.btn:hover {
 		margin-bottom: 30px;
 	}
 
-
+    .home-section{
+        padding-top: 95px;
+    }
 }
 
 @media (max-width:480px) {

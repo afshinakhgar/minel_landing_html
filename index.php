@@ -81,6 +81,22 @@
 			font-family: vazir;
 			src: url(fonts/Vazir.woff);
 		}
+
+
+		@font-face {
+			font-family: bvazir;
+			src: url(fonts/Vazir-Bold.woff);
+		}
+
+		@font-face {
+			font-family: yekan;
+			src: url(fonts/yekan.woff);
+		}
+
+		@font-face {
+			font-family: nassim;
+			src: url(fonts/nasim.ttf);
+		}
 	</style>
     <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -119,24 +135,22 @@
 			<div class="wow bounceInUp" data-wow-delay="0.4s">
                     <div id="owl-intro" class="owl-carousel">
                         <div class="item"><img src="img/gallery/1.jpg" class="img-responsive" alt="img"></div>
-                        <!--<div class="item"><img src="img/gallery/2.jpg" class="img-responsive" alt="img"></div>
+
                         <div class="item"><img src="img/gallery/3.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/4.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/5.jpg" class="img-responsive" alt="img"></div>
-                        <div class="item"><img src="img/gallery/6.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/7.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/8.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/9.jpg" class="img-responsive" alt="img"></div>
                         <div class="item"><img src="img/gallery/10.jpg" class="img-responsive" alt="img"></div>
-						<div class="item"><img src="img/gallery/12.jpg" class="img-responsive" alt="img"></div>-->
-
+<div class="item"><img src="img/gallery/12.jpg" class="img-responsive" alt="img"></div>
             		</div>
 			</div>
 
 			<div class="intro_wrapp_logo">
-				<div class="slogan">
+				<!--<div class="slogan">
 					<a href="http://www."><img src="img/minel.jpg" class="logo" alt="" /></a>
-				</div>
+				</div>-->
 				<div class="page-scroll">
 					<a href="#about">
 						<i class="fa fa-angle-down fa-5x animated"></i>
@@ -147,34 +161,7 @@
 	<!-- /Section: intro -->
 	
     <!-- Navigation -->
-    <div id="navigation">
-        <nav class="navbar navbar-custom" role="navigation">
-                              <div class="container">
-                                    <div class="row">
-                                          <div class="col-md-12">
-                         
-                                          <!-- Brand and toggle get grouped for better mobile display -->
-                                          <div class="navbar-header">
-                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-                                                <i class="fa fa-bars"></i>
-                                                </button>
-                                          </div>
-                                                      <!-- Collect the nav links, forms, and other content for toggling -->
-                                                      <div class="collapse navbar-collapse" id="menu">
-                                                            <ul class="nav navbar-nav">
-                                                                  <li><a href="#contact">تماس با ما</a></li>
-																  <li><a href="#about">درباره مینل</a></li>
-																  <li class="active"><a href="#intro">مینل</a></li>
-                                                            </ul>
-                                                      </div>
-                                                      <!-- /.Navbar-collapse -->
-                             
-                                          </div>
-                                    </div>
-                              </div>
-                              <!-- /.container -->
-                        </nav>
-    </div> 
+  
     <!-- /Navigation -->  
 
 	<!-- Section: about -->
@@ -185,7 +172,7 @@
 					
 						<div class="section-heading text-center">
 						<div class="wow bounceInDown" data-wow-delay="0.2s">
-							<h2>افتتاح سالن زیبایی مینل</h2>
+							<h2 class="page_title">افتتاح سالن زیبایی <span>مینل</span></h2>
 						</div>
 						<p class="wow bounceInUp" data-wow-delay="0.3s">
 							خدمات رنگ و مش، کوپ، اصلاح ابرو، ناخن،ماساژ و میکرو بلندینگ
@@ -205,6 +192,13 @@
 				</div>		
 				<div class="col-md-6">
 		
+				<p class="form_title">
+					جهت استفاده از خدمات سالن زیبایی مینل با تخفیف افتتاحیه نیز و شرکت در قرعه کشی هفتگی ما 
+(
+					استفاده
+از خدمات رایگان به قید قرعه)  فرم زیر را تكمیل نمائید:
+				</p>
+
             <div class="form-wrapper marginbot-50">
                 <div id="message_pm"><?=$message_sent?></div>
                 <div id="errormessage"></div>
@@ -213,24 +207,29 @@
                         <input type="text" name="name" class="form-control" id="name" placeholder="نام" data-rule="minlen:4" data-msg="حداقل 4 حرف" />
                         <div class="validation"></div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="ایمیل" data-rule="email" data-msg="ایمیل ورودی اشتباه است" />
-                        <div class="validation"></div>
-                    </div>
+                    
                    <div class="form-group">
                         <input type="number" class="form-control" name="number" id="number" placeholder="شماره تلفن" data-rule="number" data-msg="لطفا شماره تلفن صحیح وارد کنید" />
                         <div class="validation"></div>
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-control" style="height:50px" name="message" rows="2" data-rule="required" data-msg="پیام خود را بنویسید" placeholder="متن پیام"></textarea>
-                        <div class="validation"	></div>
-                    </div>
+                  
                     
                     <div class="text-center"><button type="submit" class="btn btn-skin btn-block" id="btnContactUs">ارسال</button></div>
                 </form>
             </div>
 			
-					
+					<p class="lead"><i class="fa fa-phone"></i>
+				 		<a href="tel:+982126751030">٢٦٧٥١٠٣٠</a>-
+				 		<a href="tel:+982126751040">٢٦٧٥١٠٤٠</a>-
+				 		<a href="tel:+982126751060">٢٦٧٥١٠٦٠</a>
+					 </p>
+
+					<p class="lead"><i class="fa fa-phone"></i>
+					 	<a href="tel:+989120520750">٠٩١٢٠٥٢٠٧٥٠</a>
+					 </p>
+
+
+					<p class="lead"><i class="fa fa-address"></i> آدرس: ميدان هروی، شمس اباد، پايين تر از ميدان شریفی، پلاك٩٦٢، طبقه ٥ غربی</p>
 					<!--<a href="#gallery" class="btn btn-skin btn-lg btn-scroll">مشاهده تصاویر بیشتر</a>-->
 				</div>
 			</div>		
@@ -240,22 +239,10 @@
 
 	<section class="section-heading">
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-
-
-				</div>
-			</div>
-		</div>
 	
 
-
 	<div class="text-center">
-					<p class="lead"><i class="fa fa-phone"></i> ٢٦٧٥١٠٣٠ - ٢٦٧٥١٠٤٠ - ٢٦٧٥١٠٦٠</p>
-
-
-					<p class="lead"><i class="fa fa-address"></i> آدرس: ميدان هروی، شمس اباد، پايين تر از ميدان شریفی، پلاك٩٦٢، طبقه ٥ غربی</p>
+					
 
 
 
